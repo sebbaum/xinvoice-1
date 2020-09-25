@@ -18,6 +18,12 @@ mix.js("resources/js/app.js", "public/js/app.js")
     .tailwind("./tailwind.config.js")
     .sourceMaps();
 
+mix.browserSync({
+    proxy: {
+        target: "https://xinvoice.vbox",
+    }
+});
+
 if (mix.inProduction()) {
     mix.version();
 }

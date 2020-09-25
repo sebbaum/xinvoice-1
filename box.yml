@@ -59,7 +59,7 @@ provision:
   nginx: true
   apache: false
   nvm: true
-  mysql: true
+  mysql: false
   memcached: false
   redis: false
   docker: false

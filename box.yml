@@ -18,6 +18,12 @@ SERVER_NAME: xinvoice.vbox
 USE_SSL: true
 OPEN_BROWSER: true
 
+########################################################################################################################
+#
+# Define a path to additional ca certificates, that should be trusted.
+# Default: empty
+#
+########################################################################################################################
 extra_certificates:
 
 ########################################################################################################################
@@ -60,6 +66,7 @@ provision:
   apache: false
   nvm: true
   mysql: false
+  mailhog: true
   memcached: false
   redis: false
   docker: false
